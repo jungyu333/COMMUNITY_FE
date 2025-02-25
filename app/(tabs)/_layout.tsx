@@ -21,9 +21,9 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name='explore'
+        name='setting'
         options={{
-          title: 'Explore',
+          title: '설정',
         }}
       />
     </Tabs>
