@@ -1,4 +1,5 @@
 import { Stack } from 'expo-router';
+import { colors } from '@/constants/color';
 
 export default function MyLayout() {
   return (
@@ -6,7 +7,7 @@ export default function MyLayout() {
       screenOptions={{
         headerShown: false,
         contentStyle: {
-          backgroundColor: 'white',
+          backgroundColor: colors.WHITE,
         },
       }}>
       <Stack.Screen name='index' options={{ title: '내 프로필', headerShown: false }} />
