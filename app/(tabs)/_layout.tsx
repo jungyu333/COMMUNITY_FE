@@ -2,7 +2,6 @@ import { Tabs } from 'expo-router';
 import React from 'react';
 
 export default function TabLayout() {
-
   return (
     <Tabs
       screenOptions={{
@@ -10,13 +9,19 @@ export default function TabLayout() {
         headerShown: false,
       }}>
       <Tabs.Screen
-        name="index"
+        name='index'
         options={{
-          title: 'Home',
+          title: '홈',
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name='my'
+        options={{
+          title: '내 프로필',
+        }}
+      />
+      <Tabs.Screen
+        name='explore'
         options={{
           title: 'Explore',
         }}
