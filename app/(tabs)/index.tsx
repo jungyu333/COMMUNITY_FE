@@ -1,4 +1,4 @@
-import { Pressable, SafeAreaView, Text, View } from 'react-native';
+import { Pressable, SafeAreaView, Text } from 'react-native';
 import { router } from 'expo-router';
 
 export default function HomeScreen() {
