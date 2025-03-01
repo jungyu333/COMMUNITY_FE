@@ -11,7 +11,7 @@ export const InputField = ({ label, variant = 'filled', ...props }: Props) => {
     <View>
       {label && <Text style={Styles.label}>{label}</Text>}
       <View style={[Styles.container, Styles[variant]]}>
-        <TextInput style={Styles.input} {...props} />
+        <TextInput placeholderTextColor={colors.GRAY['500']} style={Styles.input} {...props} />
       </View>
     </View>
   );
@@ -24,6 +24,7 @@ const Styles = StyleSheet.create({
     paddingHorizontal: 10,
     justifyContent: 'center',
     alignItems: 'center',
+    flexDirection: 'row',
   },
 
   label: {
