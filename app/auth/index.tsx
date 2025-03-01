@@ -1,4 +1,4 @@
-import { Image, SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { Image, SafeAreaView, StyleSheet, View } from 'react-native';
 import { CustomButton } from '@/components/CustomButton';
 import { Link } from 'expo-router';
 

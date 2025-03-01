@@ -1,6 +1,7 @@
 import { Link, Stack } from 'expo-router';
 import { Foundation } from '@expo/vector-icons';
 import { colors } from '@/constants/color';
+import { StyleSheet } from 'react-native';
 
 const AuthLayout = () => {
   return (
@@ -17,7 +18,7 @@ const AuthLayout = () => {
           title: '로그인',
           headerShown: true,
           headerLeft: () => (
-            <Link href={'/'} replace>
+            <Link href={'/'} replace style={Styles.homeIcon}>
               <Foundation name={'home'} size={28} color={colors.BLACK} />{' '}
             </Link>
           ),
@@ -28,3 +29,9 @@ const AuthLayout = () => {
 };
 
 export default AuthLayout;
+
+const Styles = StyleSheet.create({
+  homeIcon: {
+    paddingRight: 5,
+  },
+});
