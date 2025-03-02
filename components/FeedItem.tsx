@@ -14,8 +14,10 @@ export const FeedItem = ({ post }: Props) => {
   return (
     <View style={Styles.container}>
       <View style={Styles.contentContainer}>
-        <Text style={Styles.title}>게시글 제목</Text>
-        <Text style={Styles.description}>게시글 내용</Text>
+        <Text style={Styles.title}>{post.title}</Text>
+        <Text numberOfLines={3} style={Styles.description}>
+          {post.description}
+        </Text>
       </View>
       <View style={Styles.menuContainer}>
         <Pressable style={Styles.menu}>
