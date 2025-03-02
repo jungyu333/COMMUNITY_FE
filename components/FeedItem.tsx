@@ -3,6 +3,7 @@ import { colors } from '@/constants/color';
 import { MaterialCommunityIcons, Octicons } from '@expo/vector-icons';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { Post } from '@/types';
+import { Profile } from '@/components/Profile';
 
 interface Props {
   post: Post;
@@ -14,6 +15,12 @@ export const FeedItem = ({ post }: Props) => {
   return (
     <View style={Styles.container}>
       <View style={Styles.contentContainer}>
+        <Profile
+          imageUri={post.author.imageUri}
+          onPress={() => {}}
+          nickname={post.author.nickname}
+          createdAt={post.createdAt}
+        />
         <Text style={Styles.title}>{post.title}</Text>
         <Text numberOfLines={3} style={Styles.description}>
           {post.description}

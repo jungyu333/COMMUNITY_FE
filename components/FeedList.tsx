@@ -9,10 +9,10 @@ const dummyData = [
     title: 'title',
     description:
       '더미 내용입니다.더미 내용입니다.더미 내용입니다.더미 내용입니다.더미 내용입니다.더미 내용입니다.더미 내용입니다.더미 내용입니다.더미 내용입니다.더미 내용입니다.',
-    createdAt: 'createdAt',
+    createdAt: '2025-01-01',
     author: {
       id: 1,
-      nickname: 'nickname',
+      nickname: '준규',
       imageUri: '',
     },
     imageUris: [],
