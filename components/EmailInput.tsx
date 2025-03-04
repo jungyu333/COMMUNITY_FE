@@ -17,6 +17,7 @@ export const EmailInput = () => {
       }}
       render={({ field: { onChange, value }, fieldState: { error } }) => (
         <InputField
+          autoFocus
           label={'이메일'}
           placeholder={'이메일을 입력해주세요.'}
           inputMode={'email'}
