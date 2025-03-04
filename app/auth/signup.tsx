@@ -28,7 +28,7 @@ const SignupScreen = () => {
     <FormProvider {...signupForm}>
       <View style={Styles.container}>
         <EmailInput />
-        <PasswordInput />
+        <PasswordInput submitBehavior={'submit'} />
         <PasswordConfirmInput />
       </View>
 
