@@ -12,7 +12,14 @@ export const InputField = ({ label, variant = 'filled', error = '', ...props }: 
     <View>
       {label && <Text style={Styles.label}>{label}</Text>}
       <View style={[Styles.container, Styles[variant], Boolean(error) && Styles.inputError]}>
-        <TextInput placeholderTextColor={colors.GRAY['500']} style={Styles.input} {...props} />
+        <TextInput
+          placeholderTextColor={colors.GRAY['500']}
+          style={Styles.input}
+          autoCapitalize={'none'}
+          spellCheck={false}
+          autoCorrect={false}
+          {...props}
+        />
       </View>
       {Boolean(error) && <Text style={Styles.error}>{error}</Text>}
     </View>
