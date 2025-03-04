@@ -2,7 +2,8 @@ import { Controller, useFormContext } from 'react-hook-form';
 import { InputField } from '@/components/InputField';
 
 export const PasswordInput = () => {
-  const { control } = useFormContext();
+  const { control, setFocus } = useFormContext();
+
   return (
     <Controller
       rules={{
@@ -18,9 +19,12 @@ export const PasswordInput = () => {
           label={'비밀번호'}
           placeholder={'비밀번호를 입력해주세요.'}
           secureTextEntry
+          submitBehavior={'submit'}
+          textContentType={'oneTimeCode'}
           value={value}
           onChangeText={onChange}
           error={error?.message}
+          onSubmitEditing={() => setFocus('passwordConfirm')}
         />
       )}
       name={'password'}
